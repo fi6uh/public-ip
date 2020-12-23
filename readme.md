@@ -1,0 +1,2 @@
+# Public IP
+This is a little utility I wrote for grabbing an endpoint's public IP with the smallest network footprint possible (probably, I'm not an expert).  Basically, just loops through running `traceroute` by limiting the hops, but increasing each loop until the command returns an IP that is not listed in `cidr_list`.  I picked some common private ranges here but these can easily be modified to fit your needs.
